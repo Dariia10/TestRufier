@@ -1,4 +1,8 @@
-class SecondWindow (QWidget):
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QVBoxLayout, QHBoxLayout
+from instr import *
+
+class SecondWindow(QWidget):
     def __init__(self):
         super().__init__()
         self.set_appear()
@@ -12,10 +16,8 @@ class SecondWindow (QWidget):
         self.move(win_x, win_y)
 
     def initUI(self):
-        self.lb_hello = QLabel(txt_hello)
-        self.lb_instruction = QLabel(txt_instruction)
-        self.btn_next = QPushButton(txt_next)
+        pass
+     
 
-        
     def connects(self):
         pass
