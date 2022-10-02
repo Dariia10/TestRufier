@@ -22,9 +22,9 @@ class MainWindow(QWidget):
         self.btn_next = QPushButton(txt_next)
 
         self.v_line = QVBoxLayout()
-        self.v_line.addWidget(self.lb_hello, alignment = Qt.AlignCenter)
-        self.v_line.addWidget(self.lb_instruction, alignment = Qt.AlignCenter)
-        self.v_line.addWidget(self.btn_next, alignment = Qt.AlignCenter)
+        self.v_line.addWidget(self.lb_hello, alignment= Qt.AlignCenter)
+        self.v_line.addWidget(self.lb_hello, alignment= Qt.AlignCenter)
+        self.v_line.addWidget(self.btn_next, alignment= Qt.AlignCenter)
 
         self.setLayout(self.v_line)
 
@@ -34,10 +34,7 @@ class MainWindow(QWidget):
     def next_window(self):
         self.hide()
         self.sec_win = SecondWindow()
-
-
-
-
+        
 app = QApplication([])
 mainWindow = MainWindow()
 app.exec_()
