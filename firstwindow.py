@@ -23,7 +23,7 @@ class MainWindow(QWidget):
 
         self.v_line = QVBoxLayout()
         self.v_line.addWidget(self.lb_hello, alignment= Qt.AlignCenter)
-        self.v_line.addWidget(self.lb_hello, alignment= Qt.AlignCenter)
+        self.v_line.addWidget(self.lb_instruction, alignment= Qt.AlignCenter)
         self.v_line.addWidget(self.btn_next, alignment= Qt.AlignCenter)
 
         self.setLayout(self.v_line)
