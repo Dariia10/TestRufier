@@ -36,5 +36,5 @@ class MainWindow(QWidget):
         self.sec_win = SecondWindow()
         
 app = QApplication([])
-mainWindow = MainWindow()
+mainWindow=MainWindow()
 app.exec_()
